@@ -1,7 +1,6 @@
 
 let scope = {
     HeadBtn: e => {
-        console.log(e.props.index)
         e.target.addEventListener("click", ev => {
             if (e.props.index == 0) {
                 window.scrollTo(0, 0);
