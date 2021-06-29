@@ -37,6 +37,7 @@ a {
     font-weight: 700;
     color: #06ACEF;
     justify-content: center;
+    background-color: white;
     align-items: center;
     height: 100px;
 }

@@ -3,7 +3,7 @@
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: grid;
-    grid-template-rows: auto 1fr 50px;
+    grid-template-rows: 250px 1fr 50px;
     grid-template-columns: 1fr;
     height: 100vh;
     min-width: 250px;
@@ -28,7 +28,7 @@
 .img-container img {
     max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -54,11 +54,9 @@
 .aside {
     transform: translateX(0px) !important;
 }
-
 .aside-wrapper {
-    transform: translateX(250px) !important;
+    transform: translateX(0px) !important;
 }
-
 .aside-main {
     overflow-x: hidden;
 }
