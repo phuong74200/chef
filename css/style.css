@@ -35,7 +35,7 @@ a {
     letter-spacing: 2px;
     background-color: #f2f2f2;
     font-weight: 700;
-    color: #06ACEF;
+    color: #3366CC;
     justify-content: center;
     background-color: white;
     align-items: center;
@@ -65,4 +65,14 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
