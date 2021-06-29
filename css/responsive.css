@@ -13,14 +13,18 @@
         position: fixed;
         max-width: 250px;
         top: 0;
+        left: 0;
         z-index: 999px;
-        overflow: hidden;
         transform: translateX(-250px);
         transition: all .5s;
+        height: 100vh;
     }
 }
 
 @media only screen and (max-width: 950px) {
+    .img-container {
+        display: none;
+    }
     .page-content {
         grid-template-columns: 1fr;
     }
@@ -34,5 +38,8 @@
     .images-side div img {
         width: 100%;
         height: 100%;
+    }
+    .header {
+        grid-template-rows: 1fr 50px;
     }
 }
