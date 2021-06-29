@@ -42,4 +42,14 @@
     .header {
         grid-template-rows: 1fr 50px;
     }
+    .page-wallpaper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .introduce {
+        min-width: 90vw;
+        transform: translate(0);
+        text-align: justify;
+    }
 }
