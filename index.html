@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Component 3</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css" />
+    <head>
+        <meta property="og:title" content="Component 3" />
+        <meta property="og:type" content="Website" />
+        <meta property="og:url" content="localhost:5500" />
+        <meta property="og:image" content="./assets/full-signal.svg" />
+        <meta property="og:description" content="A component library help you build page faster" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+
+    <div id="components">
+        <component *name="HeadBtn" (load)="HeadBtn">
+            <prop *name="content" *type="String">Content</prop>
+            <prop *name="index" *type="Number">#</prop>
+            <render>
+                <div class="page-btn">
+                    <a>
+                        <span>{{content}}</span>
+                    </a>
+                </div>
+            </render>
+        </component>
+    </div>
+
+    <body>
+        <div class="main" id="main">
+            <div id="drop">
+                <div class="burger">
+                    <label for="check" id="burgerBtn">
+                        <input type="checkbox" id="check" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <div class="header" id="header">
+                    <div>
+                        <img src="./assets/sign.png" alt="chef's logo" />
+                    </div>
+                    <div class="nav-bar">
+                        <HeadBtn index="0" content="home" class="on-page"></HeadBtn>
+                        <HeadBtn index="1" content="the chef"></HeadBtn>
+                        <HeadBtn index="2" content="the tv presenter"></HeadBtn>
+                        <HeadBtn index="3" content="awards"></HeadBtn>
+                        <HeadBtn index="4" content="contact"></HeadBtn>
+                    </div>
+                    <div class="social-link">
+                        <a><i class="fab fa-facebook-f"></i></a>
+                        <a><i class="fab fa-twitter"></i></a>
+                        <a><i class="fab fa-linkedin-in"></i></a>
+                        <a><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="wrapper">
+                <div class="page">
+                    <div class="page-wallpaper">
+                        <div class="introduce">
+                            <h1>Chef's name</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Fusce dignissim nunc magna, a feugiat lorem laoreet nec.
+                                Ut lorem arcu, accumsan nec semper vel, pretium ac ante.
+                                Nulla dictum in eros vitae porta. Nullam eget lectus urna.
+                                Nulla odio libero, cursus at ipsum sit amet, dapibus euismod odio.
+                                Pellentesque at posuere arcu
+                            </p>
+                            <button class="read-more-btn">
+                                <span>READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-title">The chef</div>
+                <div class="page">
+                    <div class="page-wallpaper-2"></div>
+                    <div class="page-content">
+                        <div class="content-side">
+                            <div class="title">Alan the chef</div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Fusce dignissim nunc magna, a feugiat lorem laoreet nec.
+                                Ut lorem arcu, accumsan nec semper vel, pretium ac ante.
+                                Nulla dictum in eros vitae porta. Nullam eget lectus urna.
+                                Nulla odio libero, cursus at ipsum sit amet, dapibus euismod odio.
+                                Pellentesque at posuere arcu.
+                            </p>
+                            <p>
+                                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Phasellus dictum est ac quam suscipit, eu auctor lectus porta. Aenean quis ex ex.
+                                Integer in erat nisi. Curabitur nec lectus nisi. Cras vulputate elit a tellus porttitor vestibulum.
+                                Morbi quis molestie erat. Cras non eros dapibus, pretium dui semper, tristique nulla.
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                                Aenean urna lorem, sagittis ac efficitur vel, hendrerit vel tellus.
+                            </p>
+                            <h3>Private Culinary Events and activities</h3>
+                            <p class="">
+                                Vestibulum venenatis interdum vestibulum.
+                                Donec elementum diam sed nisi faucibus blandit sed vel odio.
+                                Donec sit amet hendrerit erat. Phasellus scelerisque justo quis sapien tristique sagittis.
+                                Duis nec urna eleifend elit pulvinar vestibulum ut eu dui.
+                                Etiam sed erat a tortor bibendum faucibus ac quis ex.
+                                Nulla non dolor quis dolor feugiat pellentesque consectetur vitae erat.
+                                Fusce condimentum diam magna, eget lobortis mi rhoncus at.
+                            </p>
+                            <hr>
+                            <p class="">
+                                Sed ipsum quam, <strong> sed hendrerit eget, malesuada ut nulla.
+                                    Morbi at tortor in nisl dignissim rutrum at non mauris.
+                                    Class aptent taciti </strong>sociosqu ad litora torquent per conubia nostra,
+                                per inceptos himenaeos.
+                            </p>
+                            <hr>
+                            <p class="">
+                                Etiam semper erat enim, a imperdiet metus venenatis dictum.
+                                Nam id purus faucibus, <strong>sodales felis eget, bibendum lectus.
+                                    Aenean congue quam ipsum, eu rutrum </strong> molestie a. In quis
+                            </p>
+                            <hr>
+                            <p class="">
+                                <strong>Ligula a felis fringilla ornare ut at sapien</strong>. Duis id est finibus,
+                                scelerisque dolor eu, pharetra purus. Nam congue ac ante eget dictum.
+                                Vivamus et vulputate nisl. Praesent sed erat sodales, mattis massa eget,
+                                efficitur odio. Nulla posuere pharetra fermentum. Sed mattis egestas laoreet.
+                                aecenas auctor sodales malesuada. Integer ut pretium est. Duis ut tempor libero.
+                            </p>
+                            <hr>
+                            <p class="">
+                                <strong>Vivamus sit amet velit ipsum</strong>. Pellentesque vulputate
+                                fermentum mollis. Integer blandit eget urna id fringilla. Sed sagittis sit
+                                amet nulla quis ornare. Donec gravida consequat tempus. Praesent ac risus
+                                scelerisque nibh venenatis venenatis quis sit amet velit. Vestibulum augue
+                                leo, euismod in nisl id, aliquam bibendum justo. Suspendisse a erat tempus,
+                                dapibus dui in, semper felis.
+                            </p>
+                            <hr>
+                            <h3>Cookery demonstrations and masterclasses in 2019 include...</h3>
+                            <ul class="list">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Donec nec justo ac nisl semper pharetra.</li>
+                                <li>Ut eu arcu quis diam semper accumsan.</li>
+                                <li>Morbi condimentum augue et ligula tristique interdum.</li>
+                                <li>Sed rhoncus sapien quis lorem tristique tincidunt.</li>
+                                <li>Proin id augue vitae tellus consequat pharetra at eu ipsum.</li>
+                            </ul>
+                        </div>
+                        <div class='images-side'>
+                            <div><img src="assets/dynamic/295x180.png" /></div>
+                            <div><img src="assets/dynamic/295x196.png" /></div>
+                            <div><img src="assets/dynamic/295x455.png" /></div>
+                            <div><img src="assets/dynamic/295x255.png" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-title">THE TV PRESENTER</div>
+                <div class="page">
+                    <div class="page-wallpaper-2" style="background-image: url('./assets/page3.jpg')"></div>
+                    <div class="page-content">
+                        <div class="content-side">
+                            <div class="title">The TV presenter</div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Fusce dignissim nunc magna, a feugiat lorem laoreet nec.
+                                Ut lorem arcu, accumsan nec semper vel, pretium ac ante.
+                                Nulla dictum in eros vitae porta. Nullam eget lectus urna.
+                                Nulla odio libero, cursus at ipsum sit amet, dapibus euismod odio.
+                                Pellentesque at posuere arcu.
+                            </p>
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>
+                                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Phasellus dictum est ac quam suscipit, eu auctor lectus porta. Aenean quis ex ex.
+                                Integer in erat nisi. Curabitur nec lectus nisi. Cras vulputate elit a tellus porttitor vestibulum.
+                                Morbi quis molestie erat. Cras non eros dapibus, pretium dui semper, tristique nulla.
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                                Aenean urna lorem, sagittis ac efficitur vel, hendrerit vel tellus.
+                            </p>
+                            <h3>A selection of Alan`s TV accolades include:</h3>
+                            <p class="">
+                                Vestibulum venenatis interdum vestibulum.
+                                Donec elementum diam sed nisi faucibus blandit sed vel odio.
+                                Donec sit amet hendrerit erat. Phasellus scelerisque justo quis sapien tristique sagittis.
+                                Duis nec urna eleifend elit pulvinar vestibulum ut eu dui.
+                                Etiam sed erat a tortor bibendum faucibus ac quis ex.
+                                Nulla non dolor quis dolor feugiat pellentesque consectetur vitae erat.
+                                Fusce condimentum diam magna, eget lobortis mi rhoncus at.
+                            </p>
+                            <hr>
+                            <p class="">
+                                Sed ipsum quam, <strong> sed hendrerit eget, malesuada ut nulla.
+                                    Morbi at tortor in nisl dignissim rutrum at non mauris.
+                                    Class aptent taciti </strong>sociosqu ad litora torquent per conubia nostra,
+                                per inceptos himenaeos.
+                            </p>
+                            <hr>
+                            <p class="">
+                                Etiam semper erat enim, a imperdiet metus venenatis dictum.
+                                Nam id purus faucibus, <strong>sodales felis eget, bibendum lectus.
+                                    Aenean congue quam ipsum, eu rutrum </strong> molestie a. In quis
+                            </p>
+                            <hr>
+                            <p class="">
+                                <strong>Ligula a felis fringilla ornare ut at sapien</strong>. Duis id est finibus,
+                                scelerisque dolor eu, pharetra purus. Nam congue ac ante eget dictum.
+                                Vivamus et vulputate nisl. Praesent sed erat sodales, mattis massa eget,
+                                efficitur odio. Nulla posuere pharetra fermentum. Sed mattis egestas laoreet.
+                                aecenas auctor sodales malesuada. Integer ut pretium est. Duis ut tempor libero.
+                            </p>
+                            <hr>
+                            <p class="">
+                                <strong>Vivamus sit amet velit ipsum</strong>. Pellentesque vulputate
+                                fermentum mollis. Integer blandit eget urna id fringilla. Sed sagittis sit
+                                amet nulla quis ornare. Donec gravida consequat tempus. Praesent ac risus
+                                scelerisque nibh venenatis venenatis quis sit amet velit. Vestibulum augue
+                                leo, euismod in nisl id, aliquam bibendum justo. Suspendisse a erat tempus,
+                                dapibus dui in, semper felis.
+                            </p>
+                            <hr>
+                        </div>
+                        <div class='images-side'>
+                            <div><img src="assets/dynamic/295x180.png" /></div>
+                            <div><img src="assets/dynamic/295x196.png" /></div>
+                            <div><img src="assets/dynamic/295x455.png" /></div>
+                            <div><img src="assets/dynamic/295x255.png" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-title">AWARDS</div>
+                <div class="page">
+                    <div class="page-wallpaper-2" style="background-image: url('./assets/page4.jpg')"></div>
+                    <div class="page-content">
+                        <div class="content-side">
+                            <div class="title">Awards accolades, professional memberships and endorsements:</div>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Donec nec justo ac nisl semper pharetra.</li>
+                                <li>Ut eu arcu quis diam semper accumsan.</li>
+                                <li>Morbi condimentum augue et ligula tristique interdum.</li>
+                                <li>Sed rhoncus sapien quis lorem tristique tincidunt.</li>
+                                <li>Proin id augue vitae tellus consequat pharetra at eu ipsum.</li>
+                            </ul>
+                            <hr>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Donec nec justo ac nisl semper pharetra.</li>
+                                <li>Ut eu arcu quis diam semper accumsan.</li>
+                                <li>Morbi condimentum augue et ligula tristique interdum.</li>
+                                <li>Sed rhoncus sapien quis lorem tristique tincidunt.</li>
+                                <li>Proin id augue vitae tellus consequat pharetra at eu ipsum.</li>
+                            </ul>
+                            <hr>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Donec nec justo ac nisl semper pharetra.</li>
+                                <li>Ut eu arcu quis diam semper accumsan.</li>
+                                <li>Morbi condimentum augue et ligula tristique interdum.</li>
+                                <li>Sed rhoncus sapien quis lorem tristique tincidunt.</li>
+                                <li>Proin id augue vitae tellus consequat pharetra at eu ipsum.</li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div class='images-side'>
+                            <div><img src="assets/dynamic/295x180.png" /></div>
+                            <div><img src="assets/dynamic/295x196.png" /></div>
+                            <div><img src="assets/dynamic/295x455.png" /></div>
+                            <div><img src="assets/dynamic/295x255.png" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-title">CONTACT</div>
+                <div class="page">
+                    <div class="page-wallpaper-2" style="background-image: url('./assets/dynamic/1920x1080.png')"></div>
+                    <div class="page-content">
+                        <div class="content-side">
+                            <div class="title">CONTACT</div>
+                            <h5>You can contact Alan via email, telephone or by completing the contact form below.</h5>
+                            <p><strong>E-mail</strong>: noreply@gmail.com</p>
+                            <p><strong>Mobile</strong>: 09 999 999</p>
+                        </div>
+                        <div class='images-side'>
+                            <div><img src="assets/dynamic/295x180.png" /></div>
+                            <div><img src="assets/dynamic/295x196.png" /></div>
+                            <div><img src="assets/dynamic/295x455.png" /></div>
+                            <div><img src="assets/dynamic/295x255.png" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/anvil.js"></script>
+    <script src="js/main.js"></script>
+</html>

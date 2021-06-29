@@ -1,0 +1,117 @@
+.page {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+.title {
+    font-size: 45px;
+    font-family: lato-light;
+    font-weight: bold;
+}
+
+/* page 1 */
+
+.page-wallpaper {
+    background-image: url("../assets/page1.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 2px black;
+}
+
+.introduce {
+    font-family: kanit;
+    font-weight: 700;
+    font-size: 30px;
+    max-width: 50%;
+    z-index: 10;
+    transform: translateX(30%);
+}
+
+.introduce p {
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.read-more-btn {
+    padding: 16px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 17px;
+    max-width: auto;
+    background-color: #06ACEF;
+    outline: none;
+    border: none;
+    font-family: kanit;
+    border-radius: 0px;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+/* page 2 */
+
+.page-wallpaper-2 {
+    background-color: #06ACEF;
+    background-image: url("../assets/page2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 50vh;
+    transition: all 1s;
+}
+
+.page-content {
+    max-width: 900px;
+    padding: 64px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    font-weight: lighter;
+    font-family: lato;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 32px;
+}
+
+.content-side p, .content-side li {
+    line-height: 35px;
+    width: 100%;
+    height: auto;
+    font-family: lato-light;
+    font-size: 17px;
+}
+
+.images-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.images-side div img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
